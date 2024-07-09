@@ -9,6 +9,7 @@ symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
 print("Welcome To The PyPassword Generator!")
 
+# 'int' is converting the user outputs(strings) into usable Integers for the rest of my code
 num_of_letters = int(input("How many letters would you like in your password?\n"))
 num_of_symbols = int(input("How many symbols would you like?\n"))
 num_of_numbers = int(input("How many numbers would you like?\n"))
@@ -27,8 +28,10 @@ for symbol in range(num_of_symbols):
 for number in range(num_of_numbers):
     password_list.append(random.choice(numbers))
 
+# Shuffling the letters, numbers and symbols
 random.shuffle(password_list)
 
+# Converting the list into a string
 password = ''.join(password_list)
 
 print(f"Here is your password: {password}")
