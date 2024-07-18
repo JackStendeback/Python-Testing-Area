@@ -5,7 +5,7 @@ print(number_guessing_art.logo)
 random_number = random.randint(1, 100)
 random_number = str(random_number)
 # Printing random number for testing purposes.
-print(random_number)
+# print(random_number)
 game_running = True
 # TODO: Welcome user to the number guessing game
 print("Welcome to the Number Guessing Game!")
