@@ -89,7 +89,7 @@ while is_on:
         if is_resource_sufficient(drink["ingredients"]):
             payment = process_coins()
             if is_transaction_successful(payment, drink["cost"]):
-                make_coffee(user_prompt, drink["ingredientsreport"])
+                make_coffee(user_prompt, drink["ingredients"])
 
 # TODO: When the user chooses a drink, the program should check if there are enough resources to make that drink.
 
